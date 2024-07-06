@@ -1,11 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Homepage</title>
-</head>
-<body>
-For some reason, my homepage is currently being maintained. We apologize for the inconvenience.
-由于某些原因，我的主页正在维护，暂停访问。对于造成的不便表示歉意。
-</body>
+  <head>
+    <title>Runyi Li - Homepage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Runyi Li's homepage" />
+    <link rel="icon" href="/media/favicon.ico" />
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap);
+      html {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        max-width: 100%;
+        height: 100%;
+      }
+      body {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 800px;
+        min-width: 375px;
+      }
+      a {
+        text-decoration: none;
+        color: #1772d0;
+        cursor: pointer;
+      }
+      a:hover {
+        color: #f09228;
+      }
+      header {
+        font-size: 15px;
+        min-height: 273px;
+        padding: 20px;
+        margin: 8px 20px;
+        padding-right: 220px;
+        position: relative;
+      }
+      header > picture {
+        position: absolute;
+        width: 200px;
+        height: 273px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      @media (max-width: 540px) {
+        header {
+          padding-right: 0;
+        }
+        header > picture {
+          position: static;
+          display: block;
+          margin: auto;
+        }
+      }
+      .self-intro-name {
+        padding: 14px 0;
+        text-align: center;
+        font-weight: 400;
+        font-size: 32px;
+      }
+      .self-intro-links {
+        text-align: center;
+      }
+      h1 {
+        font-size: 24px;
+        padding: 20px;
+        margin: 0;
+        font-weight: 400;
+      }
+      .publication {
+        padding: 20px;
+        font-size: 15px;
+      }
+      .publication p {
+        margin: 0;
+      }
+      .publication > picture {
+        float: left;
+        object-fit: contain;
+        margin-right: 20px;
+        overflow: hidden;
+      }
+      .publication > picture > img {
+        transition: transform ease-in-out .3s;
+      }
+      .publication > picture > img:hover {
+        transform: scale(1.1);
+      }
+      .publication .title {
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      .publication .authors {
+        margin-bottom: 5px;
+      }
+      .publication .venue {
+        margin-bottom: 5px;
+      }
+      .publication .links {
+        margin-bottom: 5px;
+      }
+      .publication .authors .self {
+        font-weight: 400;
+      }
+      .publication .link::before {
+        content: "[";
+      }
+      .publication .link::after {
+        content: "]";
+      }
+      .publication .link {
+        margin-right: 3px;
+      }
+      .publication .desc {
+        margin-top: 14px;
+        font-size: 14px;
+      }
+      footer {
+        text-align: right;
+        padding: 20px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="self-intro-name">Runyi Li (李润一)</div>
+      <picture>
+        <source srcset="media/IDPhoto.avif" type="image/avif" />
+        <img width="200" height="273" src="media/IDPhoto.JPG" alt="ID Photo" />
+      </picture>
+      <div>
+        <p>
+          I am a master student at the School of Electronic and Computer Engineering,
+          <a href="https://www.pku.edu.cn/" target="_blank">Peking University</a>
+          advised by
+          <a href="https://jianzhang.tech/" target="_blank">Prof. Jian Zhang</a>.
+          I received the B.E. degree from the College of Computer Science,
+          <a href="https://www.scu.edu.cn/" target="_blank">Sichuan University</a>, in 2023. I also got Honour Graduate.
+        </p>
+        <p>
+          My research interest includes image restoration and image/video generation.
+        </p>
+        <div class="self-intro-links">
+          <a href="mailto:lirunyi@stu.pku.edu.cn">Email</a>
+          &nbsp;|&nbsp;
+          <a href="https://scholar.google.com/citations?user=rVP5yWoAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com/LiRunyi2001/" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Publications 2023-Now</h1>
+
+<div class="publication">
+<picture>
+<!-- <source srcset="media/360DVD.avif" type="image/avif" />
+<source srcset="media/360DVD.webp" type="image/webp" /> -->
+<img src="media/omnissr.png" width="180" height="140" alt="omnissr" />
+</picture>
+<div>
+<p class="title">OmniSSR: Zero-shot Omnidirectional Image Super-Resolution using Stable Diffusion Model</p>
+<div class="authors">
+<b>Runyi Li *</b>,
+<a href="https://github.com/llstela/" target="_blank">Xuhan Sheng *</a>,
+<a href="https://github.com/lwq20020127/" target="_blank">Weiqi Li</a>,
+<a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>(* equal contribution)
+<p class="venue">ECCV2024</p>
+<div class="links">
+<span class="link">
+<a href="https://arxiv.org/pdf/2404.10312" target="_blank">
+Paper
+</a>
+</span>
+<span class="link">
+<a href="https://lirunyi2001.github.io/projects/omnissr/" target="_blank">
+Project
+</a>
+</span>
+<span class="link">
+<a href="https://github.com/LiRunyi2001/OmniSSR" target="_blank">
+Code
+</a>
+</span>
+</div>
+<p class="desc">
+We achieve zero-shot omnidirectional image super-resolution with both fidelity and realness, dubbed as OmniSSR.
+</p>
+</div>
+</div>
+
+<div class="publication">
+  <picture>
+  <!-- <source srcset="/media/NTIRE2023.avif" type="image/avif" />
+  <source srcset="/media/NTIRE2023.webp" type="image/webp" /> -->
+  <img src="media/gshider.png" width="180" height="140" alt="gs hider" />
+  </picture>
+  <div>
+  <p class="title">GS-Hider: Hiding Messages into 3D Gaussian Splatting</p>
+  <a href="https://github.com/xuanyuzhang21/" target="_blank">Xuanyu Zhang</a>,
+  <a href="" target="_blank">Jiarui Meng</a>,
+  <b>Runyi Li</b>,
+  <a href="">Zhipei Xu</a>,
+  <a href="">Yongbing Zhang</a>,
+  <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>
+  <p class="venue">arxiv</p>
+  <div class="links">
+  <span class="link">
+  <a href="https://xuanyuzhang21.github.io/project/gshider/" target="_blank">
+  Project
+  </a>
+  </span>
+  <span class="link">
+  <a href="https://arxiv.org/abs/2405.15118" target="_blank">
+  Paper
+  </a>
+  </span>
+  </div>
+  <p class="desc">
+    We propose the first 3DGS steganography framework GS-Hider, which can hide an entire 3D scene or an image into the original 3D scene and accurately decode it from 3D Gaussians.
+  </p>
+  </div>
+  </div>
+
+  <div class="publication">
+    <picture>
+    <!-- <source srcset="/media/NTIRE2023.avif" type="image/avif" />
+    <source srcset="/media/NTIRE2023.webp" type="image/webp" /> -->
+    <img src="media/protectyourip.png" width="180" height="140" alt="protect your ip" />
+    </picture>
+    <div>
+    <p class="title">Protect-Your-IP: Scalable Source-Tracing and Attribution against Personalized Generation</p>
+    <b>Runyi Li</b>,
+    <a href="https://github.com/xuanyuzhang21/" target="_blank">Xuanyu Zhang</a>,
+    <a href="">Zhipei Xu</a>,
+    <a href="">Yongbing Zhang</a>,
+    <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>
+    <p class="venue">arxiv</p>
+    <div class="links">
+    <span class="link">
+    <!-- <a href="https://xuanyuzhang21.github.io/project/gshider/" target="_blank">
+    Project
+    </a> -->
+    <a href="https://arxiv.org/pdf/2405.16596" target="_blank">
+    Paper
+    </a>
+    </span>
+    </div>
+    <p class="desc">
+      We propose the IP protector against personalized generation, which jointly accomplish source-tracing and scalable attribution.
+    </p>
+    </div>
+    </div>
+
+<div class="publication">
+<picture>
+<!-- <source srcset="/media/NTIRE2023.avif" type="image/avif" /> -->
+<!-- <source srcset="/media/NTIRE2023.webp" type="image/webp" /> -->
+<img src="media/editguard_result.png" width="180" height="140" alt="EditGuard" />
+</picture>
+<div>
+<p class="title">Editguard: Versatile image watermarking for tamper localization and copyright protection</p>
+<a href="https://github.com/xuanyuzhang21/" target="_blank">Xuanyu Zhang</a>,
+<b>Runyi Li</b>,
+<a href="https://vvictoryuki.github.io/website/" target="_blank">Jiwen Yu</a>,
+<a href="https://zirconium2159.github.io/" target="_blank">Youmin Xu</a>,
+<a href="https://github.com/lwq20020127/" target="_blank">Weiqi Li</a>,
+<a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>
+<p class="venue">arxiv</p>
+<div class="links">
+<span class="link">
+<a href="https://arxiv.org/pdf/2404.16824" target="_blank">
+Paper
+</a>
+</span>
+</div>
+<p class="desc">
+  We propose a versatile deep forensic watermark for AIGC editing methods, such as stable diffusion inpaint, controlnet, SDXL and etc.
+</p>
+</div>
+</div>
+
+<div class="publication">
+  <picture>
+  <!-- <source srcset="/media/NTIRE2023.avif" type="image/avif" />
+  <source srcset="/media/NTIRE2023.webp" type="image/webp" /> -->
+  <img src="media/v2amark.png" width="180" height="140" alt="v2amark" />
+  </picture>
+  <div>
+  <p class="title">V2A-Mark: Versatile Deep Visual-Audio Watermarking for Manipulation Localization and Copyright Protection</p>
+  <a href="https://github.com/xuanyuzhang21/" target="_blank">Xuanyu Zhang</a>,
+  <a href="https://zirconium2159.github.io/" target="_blank">Youmin Xu</a>,
+  <b>Runyi Li</b>,
+  <a href="https://vvictoryuki.github.io/website/" target="_blank">Jiwen Yu</a>,
+  
+  <a href="https://github.com/lwq20020127/" target="_blank">Weiqi Li</a>,
+  <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>
+  <p class="venue">CVPR 2024</p>
+  <div class="links">
+  <span class="link">
+  <a href="https://arxiv.org/pdf/2312.08883.pdf" target="_blank">
+  Paper
+  </a>
+  </span>
+  </div>
+  <p class="desc">
+    We propose a versatile deep forensic watermark for AIGC editing methods, such as stable diffusion inpaint, controlnet, SDXL and etc.
+  </p>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+<h1>Publications before 2023</h1>
+<div class="publication">
+  <picture>
+  <!-- <source srcset="/media/TCSVT2022-VTB.avif" type="image/avif" />
+  <source srcset="/media/TCSVT2022-VTB.webp" type="image/webp" /> -->
+  <img src="media/jmir.png" width="180" height="140" alt="A Simple Visual-Textual Baseline for Pedestrian Attribute Recognition" />
+  </picture>
+  <div>
+  <p class="title">Effectiveness of eHealth self-management interventions in patients with heart failure: systematic review and meta-analysis</p>
+  <div class="authors">
+  <a href="" target="_blank">Siru Liu</a>,
+  <a href="" target="_blank">Jili Li</a>,
+  <a href="" target="_blank">Ding-yuan Wan</a>,
+  <b>Runyi Li</b>,
+  <a href="" target="_blank">Zhan Qu</a>, 
+  <a href="" target="_blank">Yundi Hu</a>,
+  <a href="" target="_blank">Jialin Liu</a>
+
+  </div>
+  <p class="venue">Journal of Medical Internet Research, 2022</p>
+  <div class="links">
+  <span class="link">
+  <a href="https://www.jmir.org/2022/9/e38697/" target="_blank">
+  Paper
+  </a>
+  </span>
+  </div>
+  <p class="desc">
+    This study aimed was to systematically review the evidence for the effectiveness of eHealth self-management in HF patients.
+  </p>
+  </div>
+  </div>
+
+  <div class="publication">
+    <picture>
+    <!-- <source srcset="/media/TCSVT2022-VTB.avif" type="image/avif" />
+    <source srcset="/media/TCSVT2022-VTB.webp" type="image/webp" /> -->
+    <img src="media/cbam.png" width="180" height="140" alt="cbam" />
+    </picture>
+    <div>
+    <p class="title">Breast cancer X-ray image staging: based on efficient net with multi-scale fusion and cbam attention</p>
+    <div class="authors">
+    <b>Runyi Li</b>,
+    <a href="" target="_blank">Sen Wang</a>,
+    <a href="" target="_blank">Zizhou Wang</a>,
+    <a href="" target="_blank">Lei Zhang</a>
+    </div>
+    <p class="venue">Journal of Physics, 2021</p>
+    <div class="links">
+    <span class="link">
+    <a href="https://iopscience.iop.org/article/10.1088/1742-6596/2082/1/012006/pdf" target="_blank">
+    Paper
+    </a>
+    </span>
+    </div>
+    <p class="desc">
+    We applied the EfficientNet model with CBAM attetion to the breast cancer medical image data set, and completed the breast cancer classification task with high accuracy.
+    </p>
+    </div>
+    </div>
+
+    <div class="publication">
+      <picture>
+      <!-- <source srcset="/media/TCSVT2022-VTB.avif" type="image/avif" />
+      <source srcset="/media/TCSVT2022-VTB.webp" type="image/webp" /> -->
+      <img src="media/cisai.png" width="180" height="140" alt="cbam" />
+      </picture>
+      <div>
+      <p class="title">Image caption and medical report generation based on deep learning: a review and algorithm analysis</p>
+      <div class="authors">
+      <b>Runyi Li</b>,
+      <a href="" target="_blank">Zizhou Wang</a>,
+      <a href="" target="_blank">Lei Zhang</a>
+      </div>
+      <p class="venue">IEEE Conference CISAI, 2021</p>
+      <div class="links">
+      <span class="link">
+      <a href="https://ieeexplore.ieee.org/abstract/document/9719256/" target="_blank">
+      Paper
+      </a>
+      </span>
+      </div>
+      <p class="desc"> 
+        This study is a concise review of image captioning methods and medical report generation.
+      </p>
+      </div>
+      </div>
+
+    </main>
+    <footer>
+      Template is adapted from
+      <a href="https://akaneqwq.github.io/" target="_blank">Qian Wang</a><br />
+      Last updated: July 2024
+    </footer>
+  </body>
 </html>
+
