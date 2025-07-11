@@ -136,20 +136,28 @@
         <p>
           I am a second-year master's student at the School of Electronic and Computer Engineering,
           <a href="https://www.pku.edu.cn/" target="_blank">Peking University</a>
-          advised by
+          supervised by
           <a href="https://jianzhang.tech/" target="_blank">Prof. Jian Zhang</a>.
           I received the B.E. degree from 
           <a href="https://www.scu.edu.cn/" target="_blank">Sichuan University</a>, in 2023, with Honour Graduate.
         </p>
         <p>
-          My research interest includes Generative AI, low-level vision, 3D Gaussian Splatting, and multi-modal LLM. 
-          I also work in AI privacy during internship at <a href="https://www.rabbitpre.com/" target="_blank">RabbitPre</a>, a unihorn startup.
+          My research interest includes Generative AI, Multi-modal LLM, Low-level Vision and 3D Gaussian Splatting. 
+        </p>
+        <p>
+          I am currently working as internship at <a href="https://www.bytedance.com/en/Bytedance" target="_blank">Bytedance</a> Tiktok Group, focusing on unified vision understanding and generation, via MLLM and Diffusion Model.
+        </p>
+        <p>
+          Before that, I worked as visiting student at Wurzburg University supervised by Prof. <a href="https://www.cvlai.net/" target="_blank">Radu Timofte</a>, focusing on generative AI for low-level vision, such as image super-resolution and face restoration.
+        </p>
+        <p>
+          I have also done research in (1) trustworthy AI during internship at <a href="https://www.rabbitpre.com/" target="_blank">RabbitPre</a>, a unihorn startup, and (2) AI for Chemistry and Materials research at School of Physics, Peking University, supervised by Prof. <a href="https://scholar.google.com/citations?hl=en&user=UCxgxr8AAAAJ" target="_blank">Lixin Xiao</a>.
         </p>
         <p>
           I have published several papers in top-tier conferences, such as CVPR, ECCV <b>(oral)</b>, ICLR, NeurIPS, and ACMMM, and I have got 200+ citations.
         </p>
         <p>
-          I am looking for Ph.D. position in <b>26 fall</b>. 
+          I am looking for Ph.D. position in <b>26 fall</b>, about Multi-modal LLM, Generative AI, and other topics in computer vision and machine learning. Seeking to contribute to foundational research in multimodal generation and interpretability.
           If you are interested in my research, please feel free to contact me.
         </p>
         <div class="self-intro-links">
@@ -166,6 +174,129 @@
     <main>
       <h1>Publications 2023-Now</h1>
 
+      <h3>Generative AI for Low-level Vision</h3>
+<div class="publication">
+<picture>
+<!-- <source srcset="media/360DVD.avif" type="image/avif" />
+<source srcset="media/360DVD.webp" type="image/webp" /> -->
+<img src="media/omnissr.png" width="180" height="140" alt="omnissr" />
+</picture>
+<div>
+<p class="title">OmniSSR: Zero-shot Omnidirectional Image Super-Resolution using Stable Diffusion Model</p>
+<div class="authors">
+<b>Runyi Li *</b>,
+<a href="https://github.com/llstela/" target="_blank">Xuhan Sheng *</a>,
+<a href="https://github.com/lwq20020127/" target="_blank">Weiqi Li</a>,
+<a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>(* equal contribution)
+<p class="venue">ECCV2024 <b>Oral</b></p>
+<div class="links">
+<span class="link">
+<a href="https://arxiv.org/pdf/2404.10312" target="_blank">
+Paper
+</a>
+</span>
+<span class="link">
+<a href="https://lirunyi2001.github.io/projects/omnissr/" target="_blank">
+Project
+</a>
+</span>
+<span class="link">
+<a href="https://github.com/LiRunyi2001/OmniSSR" target="_blank">
+Code
+</a>
+</span>
+</div>
+<p class="desc">
+We achieve zero-shot omnidirectional image super-resolution with both fidelity and realness, dubbed as OmniSSR.
+</p>
+</div>
+</div>
+
+<div class="publication">
+  <picture>
+  <!-- <source srcset="media/360DVD.avif" type="image/avif" />
+  <source srcset="media/360DVD.webp" type="image/webp" /> -->
+  <img src="media/realosr.png" width="180" height="140" alt="realosr" />
+  </picture>
+  <div>
+  <p class="title">RealOSR: Latent Unfolding Boosting Diffusion-based Real-world Omnidirectional Image Super-Resolution</p>
+  <div class="authors">
+  <a href="https://github.com/llstela/" target="_blank">Xuhan Sheng *</a>,
+  <b>Runyi Li *</b>,
+  <a href="https://villa.jianzhang.tech/people/bin-chen-%E9%99%88%E6%96%8C/" target="_blank">Bin Chen</a>,
+  <a href="https://github.com/lwq20020127/" target="_blank">Weiqi Li</a>,
+  <a href="https://villa.jianzhang.tech/people/xu-jiang-%E8%92%8B%E6%97%AD/" target="_blank">Xu Jiang</a>,
+  <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>(* equal contribution)
+  <p class="venue">NeurIPS 25 submission</p>
+  <div class="links">
+  <span class="link">
+  <a href="https://arxiv.org/abs/2412.09646" target="_blank">
+  Paper
+  </a>
+  </span>
+  </div>
+  <p class="desc">
+  We achieve first real-world omnidirectional image super-resolution, named as RealOSR.
+  </p>
+  </div>
+</div>
+
+<div class="publication">
+    <picture>
+    <!-- <source srcset="media/360DVD.avif" type="image/avif" />
+    <source srcset="media/360DVD.webp" type="image/webp" /> -->
+    <img src="media/ctsr.png" width="180" height="140" alt="realosr" />
+    </picture>
+    <div>
+    <p class="title">CTSR: Controllable Fidelity-Realness Trade-off Distillation for Real-World Image Super Resolution</p>
+    <div class="authors">
+    <b>Runyi Li</b>,
+    <a href="https://villa.jianzhang.tech/people/bin-chen-%E9%99%88%E6%96%8C/" target="_blank">Bin Chen</a>,
+    <a href="https://jianzhang.tech/" >Jian Zhang</a>,
+    <a href="https://www.cvlai.net/" target="_blank">Radu Timofte</a></div>
+    <p class="venue">AAAI 26 submission</p>
+    <div class="links">
+    <span class="link">
+    <a href="https://arxiv.org/pdf/2503.14272" target="_blank">
+    Paper
+    </a>
+    </span>
+    </div>
+    <p class="desc">
+    We achieve controllable real-world image SR, striking a trade-off between fidelity and realness.
+    </p>
+    </div>
+  </div>
+
+  <div class="publication">
+    <picture>
+    <!-- <source srcset="media/360DVD.avif" type="image/avif" />
+    <source srcset="media/360DVD.webp" type="image/webp" /> -->
+    <img src="media/lafr.png" width="180" height="140" alt="realosr" />
+    </picture>
+    <div>
+    <p class="title">LAFR: Efficient Diffusion-based Blind Face Restoration via Latent Codebook Alignment Adapter</p>
+    <div class="authors">
+    <b>Runyi Li</b>,
+    <a href="https://villa.jianzhang.tech/people/bin-chen-%E9%99%88%E6%96%8C/" target="_blank">Bin Chen</a>,
+    <a href="https://jianzhang.tech/" >Jian Zhang</a>,
+    <a href="https://www.cvlai.net/" target="_blank">Radu Timofte</a></div>
+    <p class="venue">NeurIPS 25 submission</p>
+    <div class="links">
+    <span class="link">
+    <a href="https://arxiv.org/abs/2505.23462" target="_blank">
+    Paper
+    </a>
+    </span>
+    </div>
+    <p class="desc">
+    We achieve efficient real-world face restoration via latent-space alignment, using only 600 (0.9%) training imgages from FFHQ.
+    </p>
+    </div>
+  </div>
+
+
+<h3>Generative AI for Trustworthy and Safety</h3>
 
 
 <div class="publication">
@@ -207,42 +338,7 @@
   </div>
 </div>
 
-<div class="publication">
-<picture>
-<!-- <source srcset="media/360DVD.avif" type="image/avif" />
-<source srcset="media/360DVD.webp" type="image/webp" /> -->
-<img src="media/omnissr.png" width="180" height="140" alt="omnissr" />
-</picture>
-<div>
-<p class="title">OmniSSR: Zero-shot Omnidirectional Image Super-Resolution using Stable Diffusion Model</p>
-<div class="authors">
-<b>Runyi Li *</b>,
-<a href="https://github.com/llstela/" target="_blank">Xuhan Sheng *</a>,
-<a href="https://github.com/lwq20020127/" target="_blank">Weiqi Li</a>,
-<a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>(* equal contribution)
-<p class="venue">ECCV2024 <b>Oral</b></p>
-<div class="links">
-<span class="link">
-<a href="https://arxiv.org/pdf/2404.10312" target="_blank">
-Paper
-</a>
-</span>
-<span class="link">
-<a href="https://lirunyi2001.github.io/projects/omnissr/" target="_blank">
-Project
-</a>
-</span>
-<span class="link">
-<a href="https://github.com/LiRunyi2001/OmniSSR" target="_blank">
-Code
-</a>
-</span>
-</div>
-<p class="desc">
-We achieve zero-shot omnidirectional image super-resolution with both fidelity and realness, dubbed as OmniSSR.
-</p>
-</div>
-</div>
+
 
 <div class="publication">
   <picture>
@@ -377,34 +473,7 @@ We achieve zero-shot omnidirectional image super-resolution with both fidelity a
     
 
 
-<div class="publication">
-  <picture>
-  <!-- <source srcset="media/360DVD.avif" type="image/avif" />
-  <source srcset="media/360DVD.webp" type="image/webp" /> -->
-  <img src="media/realosr.png" width="180" height="140" alt="realosr" />
-  </picture>
-  <div>
-  <p class="title">RealOSR: Latent Unfolding Boosting Diffusion-based Real-world Omnidirectional Image Super-Resolution</p>
-  <div class="authors">
-  <a href="https://github.com/llstela/" target="_blank">Xuhan Sheng *</a>,
-  <b>Runyi Li *</b>,
-  <a href="https://villa.jianzhang.tech/people/bin-chen-%E9%99%88%E6%96%8C/" target="_blank">Bin Chen</a>,
-  <a href="https://github.com/lwq20020127/" target="_blank">Weiqi Li</a>,
-  <a href="https://villa.jianzhang.tech/people/xu-jiang-%E8%92%8B%E6%97%AD/" target="_blank">Xu Jiang</a>,
-  <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>(* equal contribution)
-  <p class="venue">arxiv</p>
-  <div class="links">
-  <span class="link">
-  <a href="https://arxiv.org/abs/2412.09646" target="_blank">
-  Paper
-  </a>
-  </span>
-  </div>
-  <p class="desc">
-  We achieve first real-world omnidirectional image super-resolution, named as RealOSR.
-  </p>
-  </div>
-</div>
+
   
 <div class="publication">
   <picture>
@@ -420,7 +489,7 @@ We achieve zero-shot omnidirectional image super-resolution with both fidelity a
   <a href="https://villa.jianzhang.tech/people/chuhan-tong-%E4%BD%9F%E6%A5%9A%E6%B6%B5/" target="_blank">Chuhan Tong</a>,
   <a href="https://villa.jianzhang.tech/people/zhipei-xu-%E5%BE%90%E5%BF%97%E6%B2%9B/" target="_blank">Zhipei Xu</a>,
   <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a></div>
-  <p class="venue">MIR in submission (SCI JCR Q1, If=6.4)</p>
+  <p class="venue">MIR in submission (SCI JCR Q1, If=8.7)</p>
   <div class="links">
   <span class="link">
   <a href="https://arxiv.org/abs/2503.00531" target="_blank">
@@ -471,32 +540,7 @@ We achieve zero-shot omnidirectional image super-resolution with both fidelity a
 
 
 
-  <div class="publication">
-    <picture>
-    <!-- <source srcset="media/360DVD.avif" type="image/avif" />
-    <source srcset="media/360DVD.webp" type="image/webp" /> -->
-    <img src="media/ctsr.png" width="180" height="140" alt="realosr" />
-    </picture>
-    <div>
-    <p class="title">CTSR: Controllable Fidelity-Realness Trade-off Distillation for Real-World Image Super Resolution</p>
-    <div class="authors">
-    <b>Runyi Li</b>,
-    <a href="https://villa.jianzhang.tech/people/bin-chen-%E9%99%88%E6%96%8C/" target="_blank">Bin Chen</a>,
-    <a href="https://jianzhang.tech/" >Jian Zhang</a>,
-    <a href="https://www.cvlai.net/" target="_blank">Radu Timofte</a></div>
-    <p class="venue">arxiv</p>
-    <div class="links">
-    <span class="link">
-    <a href="https://arxiv.org/pdf/2503.14272" target="_blank">
-    Paper
-    </a>
-    </span>
-    </div>
-    <p class="desc">
-    We achieve controllable real-world image SR between fidelity and realness.
-    </p>
-    </div>
-  </div>
+  
 
 <h1>Publications before 2023</h1>
 <div class="publication">
@@ -604,7 +648,7 @@ We achieve zero-shot omnidirectional image super-resolution with both fidelity a
       <footer>
         Template is adapted from
         <a href="https://akaneqwq.github.io/" target="_blank">Qian Wang</a><br />
-        Last updated: June 2025
+        Last updated: July 2025
       </footer>
 
     </main>
