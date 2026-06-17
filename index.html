@@ -9,7 +9,7 @@
     />
     <meta
       name="description"
-      content="Runyi Li's academic homepage: generative AI, multimodal LLMs, embodied AI, world models, low-level vision, and trustworthy AI."
+      content="Runyi Li's academic homepage: world models, generative AI, multimodal LLMs, embodied AI, and low-level vision."
     />
     <link rel="icon" href="/media/favicon.ico" />
     <style type="text/css">
@@ -219,16 +219,9 @@
         object-fit: cover;
       }
 
-      .portrait-caption {
-        margin: 12px 0 0;
-        color: var(--muted);
-        font-size: 14px;
-        line-height: 1.45;
-      }
-
       .quick-facts {
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 12px;
         margin: 18px 0 48px;
       }
@@ -314,7 +307,8 @@
 
       .news-list,
       .honours-list,
-      .service-list {
+      .service-list,
+      .timeline-list {
         margin: 0;
         padding: 0;
         list-style: none;
@@ -322,7 +316,8 @@
 
       .news-list li,
       .honours-list li,
-      .service-list li {
+      .service-list li,
+      .timeline-list li {
         display: grid;
         grid-template-columns: 76px minmax(0, 1fr);
         gap: 14px;
@@ -332,8 +327,13 @@
 
       .news-list li:last-child,
       .honours-list li:last-child,
-      .service-list li:last-child {
+      .service-list li:last-child,
+      .timeline-list li:last-child {
         border-bottom: 0;
+      }
+
+      .timeline-list li {
+        grid-template-columns: 92px minmax(0, 1fr);
       }
 
       .date,
@@ -572,6 +572,10 @@
         .service-list li {
           grid-template-columns: 62px minmax(0, 1fr);
         }
+
+        .timeline-list li {
+          grid-template-columns: 82px minmax(0, 1fr);
+        }
       }
     </style>
   </head>
@@ -581,6 +585,7 @@
         <a class="brand" href="#">Runyi Li</a>
         <div class="nav-links">
           <a href="#about">About</a>
+          <a href="#education">Education</a>
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
           <a href="#service">Service</a>
@@ -590,7 +595,7 @@
 
       <header class="hero" id="about">
         <div>
-          <p class="eyebrow">Generative AI · Multimodal LLM · Trustworthy AI</p>
+          <p class="eyebrow">World Model · Generative AI · Multimodal LLM</p>
           <h1>Runyi Li <span class="name-cn">李 潤一</span></h1>
           <div class="hero-summary">
             <p>
@@ -607,11 +612,11 @@
               <a href="https://www.scu.edu.cn/" target="_blank">Sichuan University</a>.
             </p>
             <p>
-              My research focuses on <strong>generative AI</strong>,
-              <strong>multimodal large language models</strong>,
-              <strong>embodied AI</strong>, <strong>world models</strong>, and
-              <strong>trustworthy AI</strong>, with publications at CVPR, ECCV
-              Oral, ICLR, NeurIPS, and ACM MM.
+              My research focuses on <strong>world models</strong>,
+              <strong>generative AI</strong>,
+              <strong>multimodal large language models</strong>, and
+              <strong>embodied AI</strong>, with publications at CVPR, ECCV
+              (Oral), ICLR, NeurIPS, and ACM MM.
             </p>
             <p>
               I am looking for internship opportunities in Tokyo or Yokohama,
@@ -623,7 +628,7 @@
             <a class="button primary" href="mailto:leejunijp@gmail.com">Email</a>
             <a
               class="button"
-              href="https://scholar.google.com/citations?user=rVP5yWoAAAAJ&hl=en&oi=ao"
+              href="https://scholar.google.com/citations?user=rVP5yWoAAAAJ&amp;hl=en&amp;oi=ao"
               target="_blank"
               >Google Scholar</a
             >
@@ -636,18 +641,10 @@
             <source srcset="media/oral.jpg" type="image/jpeg" />
             <img width="280" height="350" src="media/oral.jpg" alt="Runyi Li" />
           </picture>
-          <p class="portrait-caption">
-            Previously research intern at ByteDance TikTok Group, visiting student at
-            Wurzburg University, and intern at RabbitPre.
-          </p>
         </aside>
       </header>
 
       <div class="quick-facts" aria-label="Profile highlights">
-        <div class="fact">
-          <div class="value">CVPR</div>
-          <div class="label">Publications in top-tier vision and AI venues</div>
-        </div>
         <div class="fact">
           <div class="value">ECCV</div>
           <div class="label">Oral presentation for OmniSSR in 2024</div>
@@ -663,6 +660,76 @@
       </div>
 
       <main>
+        <section id="education">
+          <div class="section-head">
+            <h2>Education & Experience</h2>
+            <p class="section-note">
+              Academic training first, then research visits and internships.
+            </p>
+          </div>
+
+          <div class="two-column">
+            <div class="panel">
+              <h3>Education</h3>
+              <ul class="timeline-list">
+                <li>
+                  <span class="year">Ph.D.</span>
+                  <span>
+                    Incoming 2026, Department of Information Science and
+                    Technology,
+                    <a href="https://www.i.u-tokyo.ac.jp/index_e.shtml" target="_blank">University of Tokyo</a>.
+                    Advisor:
+                    <a href="https://www.cvm.t.u-tokyo.ac.jp/en/index.html" target="_blank">Prof. Toshihiko Yamasaki</a>.
+                  </span>
+                </li>
+                <li>
+                  <span class="year">M.S.</span>
+                  <span>
+                    <a href="https://www.pku.edu.cn/" target="_blank">Peking University</a>,
+                    2026.
+                    Advisor:
+                    <a href="https://jianzhang.tech/" target="_blank">Prof. Jian Zhang</a>.
+                  </span>
+                </li>
+                <li>
+                  <span class="year">B.E.</span>
+                  <span>
+                    <a href="https://www.scu.edu.cn/" target="_blank">Sichuan University</a>,
+                    2023.
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Research Visits & Internships</h3>
+              <ul class="timeline-list">
+                <li>
+                  <span class="year">ByteDance</span>
+                  <span>
+                    Research intern at TikTok Group, working on unified vision understanding and generation
+                    with multimodal LLMs and diffusion models.
+                  </span>
+                </li>
+                <li>
+                  <span class="year">Wurzburg</span>
+                  <span>
+                    Visiting student at Wurzburg University, working with
+                    <a href="https://www.cvlai.net/" target="_blank">Prof. Radu Timofte</a>
+                    on generative AI for low-level vision.
+                  </span>
+                </li>
+                <li>
+                  <span class="year">RabbitPre</span>
+                  <span>
+                    Internship on trustworthy AI and AIGC protection.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section id="research">
           <div class="section-head">
             <h2>Research</h2>
@@ -682,21 +749,19 @@
                 representations.
               </p>
               <p>
-                At
-                <a href="https://www.bytedance.com/en/Bytedance" target="_blank">ByteDance</a>
-                TikTok Group, I focused on unified vision understanding and generation
-                with multimodal LLMs and diffusion models. At Wurzburg University, I
-                worked with
-                <a href="https://www.cvlai.net/" target="_blank">Prof. Radu Timofte</a>
-                on generative AI for low-level vision, including super-resolution and
-                face restoration. I also explored trustworthy AI during an internship at
-                <a href="https://www.rabbitpre.com/" target="_blank">RabbitPre</a>.
+                I am especially interested in models that plan before they generate,
+                preserve identity and provenance, and remain useful under realistic
+                degradation or manipulation.
               </p>
             </div>
 
             <div class="panel">
               <h3>Recent News</h3>
               <ul class="news-list">
+                <li>
+                  <span class="date">2026</span>
+                  <span><strong>Video-Mirai</strong> released as an arXiv preprint.</span>
+                </li>
                 <li>
                   <span class="date">2026</span>
                   <span><strong>Mirai</strong> accepted to CVPR 2026.</span>
@@ -752,6 +817,30 @@
 
             <article class="publication featured">
               <picture>
+                <img src="media/videomirai.png" width="210" height="164" alt="Video-Mirai paper preview" />
+              </picture>
+              <div>
+                <p class="title">Video-Mirai: Autoregressive Video Diffusion Models Need Foresight</p>
+                <div class="authors">
+                  <a href="https://linkedin.com/in/yonghao-yu-19061420b" target="_blank">Yonghao Yu</a>,
+                  <a href="https://layneh.github.io/" target="_blank">Lang Huang</a>,
+                  <b>Runyi Li</b>,
+                  <a href="https://zerun.me/" target="_blank">Zerun Wang</a>,
+                  <a href="https://www.cvm.t.u-tokyo.ac.jp/en//" target="_blank">Toshihiko Yamasaki</a>
+                </div>
+                <p class="venue">arXiv 2026</p>
+                <div class="links">
+                  <span class="link"><a href="https://arxiv.org/abs/2606.03971" target="_blank">Paper</a></span>
+                  <span class="link"><a href="https://y0uroy.github.io/Video-Mirai/" target="_blank">Project</a></span>
+                </div>
+                <p class="desc">
+                  We close the representation-level planning gap in causal video generators by supervising current states with future-frame foresight during training.
+                </p>
+              </div>
+            </article>
+
+            <article class="publication featured">
+              <picture>
                 <img src="media/mirai.png" width="210" height="164" alt="Mirai project teaser" />
               </picture>
               <div>
@@ -771,6 +860,39 @@
                 </div>
                 <p class="desc">
                   This study highlights that visual autoregressive models need foresight.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="publication-group">
+            <div class="group-title">
+              <h3>World Models and Agentic AI</h3>
+            </div>
+
+            <article class="publication">
+              <picture>
+                <img src="media/agenticworldmodeling.png" width="210" height="164" alt="Agentic World Modeling paper preview" />
+              </picture>
+              <div>
+                <p class="title">Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond</p>
+                <div class="authors">
+                  Meng Chu,
+                  Xuan Billy Zhang,
+                  Kevin Qinghong Lin,
+                  ...,
+                  <b>Runyi Li</b>,
+                  ...,
+                  Jiaya Jia
+                </div>
+                <p class="venue">arXiv 2026</p>
+                <div class="links">
+                  <span class="link"><a href="https://arxiv.org/abs/2604.22748" target="_blank">Paper</a></span>
+                  <span class="link"><a href="https://agentic-world-modeling.xyz/" target="_blank">Homepage</a></span>
+                  <span class="link"><a href="https://github.com/matrix-agent/awesome-agentic-world-modeling" target="_blank">Resources</a></span>
+                </div>
+                <p class="desc">
+                  We synthesize foundations, capability levels, governing laws, evaluation principles, and open problems for agentic world modeling.
                 </p>
               </div>
             </article>
@@ -810,7 +932,7 @@
                 <img src="media/realosr.png" width="210" height="164" alt="RealOSR teaser" />
               </picture>
               <div>
-                <p class="title">RealOSR: Latent Unfolding Boosting Diffusion-based Real-world Omnidirectional Image Super-Resolution</p>
+                <p class="title">RealOSR: Latent Guidance Boosts Diffusion-based Real-world Omnidirectional Image Super-Resolutions</p>
                 <div class="authors">
                   <a href="https://github.com/llstela/" target="_blank">Xuhan Sheng *</a>,
                   <b>Runyi Li *</b>,
@@ -824,7 +946,7 @@
                   <span class="link"><a href="https://arxiv.org/abs/2412.09646" target="_blank">Paper</a></span>
                 </div>
                 <p class="desc">
-                  We achieve the first real-world omnidirectional image super-resolution framework, named RealOSR.
+                  We introduce RealOSR, an efficient diffusion-based framework for real-world omnidirectional image super-resolution with latent guidance.
                 </p>
               </div>
             </article>
@@ -923,7 +1045,7 @@
                 </div>
                 <p class="venue">CVPR 2025</p>
                 <div class="links">
-                  <span class="link"><a href="https://arxiv.org/abs/2405.15118" target="_blank">Paper</a></span>
+                  <span class="link"><a href="https://arxiv.org/abs/2412.01615" target="_blank">Paper</a></span>
                 </div>
                 <p class="desc">
                   We propose OmniGuard, a hybrid manipulation localization framework for detecting and localizing image manipulations.
@@ -972,7 +1094,8 @@
                 </div>
                 <p class="venue">CVPR 2024</p>
                 <div class="links">
-                  <span class="link"><a href="https://arxiv.org/pdf/2404.16824" target="_blank">Paper</a></span>
+                  <span class="link"><a href="https://arxiv.org/abs/2312.08883" target="_blank">Paper</a></span>
+                  <span class="link"><a href="https://xuanyuzhang21.github.io/project/editguard/" target="_blank">Project</a></span>
                   <span class="link"><a href="https://github.com/xuanyuzhang21/EditGuard" target="_blank">Code</a></span>
                 </div>
                 <p class="desc">
@@ -993,11 +1116,12 @@
                   <b>Runyi Li</b>,
                   <a href="https://vvictoryuki.github.io/website/" target="_blank">Jiwen Yu</a>,
                   <a href="https://github.com/lwq20020127/" target="_blank">Weiqi Li</a>,
+                  Zhipei Xu,
                   <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a>
                 </div>
                 <p class="venue">ACM MM 2024</p>
                 <div class="links">
-                  <span class="link"><a href="https://arxiv.org/pdf/2312.08883.pdf" target="_blank">Paper</a></span>
+                  <span class="link"><a href="https://arxiv.org/abs/2404.16824" target="_blank">Paper</a></span>
                 </div>
                 <p class="desc">
                   We propose a versatile deep forensic watermark against AIGC editing methods for video and audio.
