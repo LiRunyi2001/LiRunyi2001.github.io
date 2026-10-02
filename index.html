@@ -428,6 +428,11 @@
         transition: transform 0.25s ease;
       }
 
+      .publication img.paper-preview {
+        object-fit: contain;
+        background: #fff;
+      }
+
       .publication:hover img {
         transform: scale(1.035);
       }
@@ -599,7 +604,7 @@
           <h1>Runyi Li <span class="name-cn">李 潤一</span></h1>
           <div class="hero-summary">
             <p>
-              I am an incoming Ph.D. student in the Department of Information
+              I am a Ph.D. student in the Department of Information
               Science and Technology at the
               <a href="https://www.i.u-tokyo.ac.jp/index_e.shtml" target="_blank">University of Tokyo</a>,
               supervised by
@@ -658,8 +663,8 @@
           <div class="label">Oral presentation for OmniSSR in 2024</div>
         </div>
         <div class="fact">
-          <div class="value">900+</div>
-          <div class="label">Citations across publications</div>
+          <div class="value">983</div>
+          <div class="label">Google Scholar citations · October 2026</div>
         </div>
         <div class="fact">
           <div class="value">2026</div>
@@ -683,7 +688,7 @@
                 <li>
                   <span class="year">Ph.D.</span>
                   <span>
-                    Incoming 2026, Department of Information Science and
+                    2026–present, Department of Information Science and
                     Technology,
                     <a href="https://www.i.u-tokyo.ac.jp/index_e.shtml" target="_blank">University of Tokyo</a>.
                     Supervised by
@@ -768,11 +773,15 @@
               <ul class="news-list">
                 <li>
                   <span class="date">2026</span>
+                  <span><a href="https://alaya-lab.github.io/EditHero/" target="_blank"><strong>EditHero</strong></a>, our benchmark for long-horizon part-level 3D editing and vibe modeling, is now available.</span>
+                </li>
+                <li>
+                  <span class="date">2026</span>
                   <span><strong>LAFR</strong> accepted to BMVC 2026.</span>
                 </li>
                 <li>
                   <span class="date">2026</span>
-                  <span><strong>Video-Mirai</strong> released as an arXiv preprint.</span>
+                  <span><strong>Video-Mirai</strong> accepted to NeurIPS 2026.</span>
                 </li>
                 <li>
                   <span class="date">2026</span>
@@ -840,13 +849,37 @@
                   <a href="https://zerun.me/" target="_blank">Zerun Wang</a>,
                   <a href="https://www.cvm.t.u-tokyo.ac.jp/en//" target="_blank">Toshihiko Yamasaki</a>
                 </div>
-                <p class="venue">arXiv 2026</p>
+                <p class="venue">NeurIPS 2026</p>
                 <div class="links">
                   <span class="link"><a href="https://arxiv.org/abs/2606.03971" target="_blank">Paper</a></span>
                   <span class="link"><a href="https://y0uroy.github.io/Video-Mirai/" target="_blank">Project</a></span>
                 </div>
                 <p class="desc">
                   We close the representation-level planning gap in causal video generators by supervising current states with future-frame foresight during training.
+                </p>
+              </div>
+            </article>
+
+            <article class="publication featured">
+              <picture>
+                <img class="paper-preview" src="media/vega.png" width="210" height="164" alt="Vega architecture for unified video understanding and generation" loading="lazy" />
+              </picture>
+              <div>
+                <p class="title">Bridging Video Understanding and Generation in a Unified Framework</p>
+                <div class="authors">
+                  Yuqi Wang*,
+                  <b>Runyi Li*</b>,
+                  Ruoyu Feng,
+                  Renjie Chen,
+                  Wenfeng Lin,
+                  Mingyu Guo
+                </div>
+                <p class="venue">arXiv 2026</p>
+                <div class="links">
+                  <span class="link"><a href="https://arxiv.org/abs/2606.31326" target="_blank">Paper</a></span>
+                </div>
+                <p class="desc">
+                  We introduce Vega, a unified video understanding and generation framework that combines autoregressive semantic token prediction with diffusion-based video rendering.
                 </p>
               </div>
             </article>
@@ -884,6 +917,33 @@
 
             <article class="publication">
               <picture>
+                <img class="paper-preview" src="media/worldrover.png" width="210" height="164" alt="WorldRover synthetic world exploration videos and annotations" loading="lazy" />
+              </picture>
+              <div>
+                <p class="title">WorldRover: A Scalable Synthetic Video Data Engine for World Exploration with Rich Annotations</p>
+                <div class="authors">
+                  Xiaojie Xu*,
+                  Zhengyuan Lin*,
+                  <b>Runyi Li</b>,
+                  Yihao Liu,
+                  <a href="https://kpzhang93.github.io/" target="_blank">Kaipeng Zhang</a>,
+                  Yongtao Ge
+                </div>
+                <p class="venue">arXiv 2026</p>
+                <div class="links">
+                  <span class="link"><a href="https://arxiv.org/abs/2608.15659" target="_blank">Paper</a></span>
+                  <span class="link"><a href="https://alayalab.github.io/WorldRover/" target="_blank">Project</a></span>
+                  <span class="link"><a href="https://github.com/AlayaLab/WorldRover" target="_blank">Code</a></span>
+                  <span class="link"><a href="https://huggingface.co/datasets/xjxu21/WorldRover" target="_blank">Data</a></span>
+                </div>
+                <p class="desc">
+                  We build a scalable Unreal Engine data pipeline for long-horizon world exploration, pairing multi-view synthetic videos with depth, trajectories, motion correspondences, and action signals.
+                </p>
+              </div>
+            </article>
+
+            <article class="publication">
+              <picture>
                 <img src="media/agenticworldmodeling.png" width="210" height="164" alt="Agentic World Modeling paper preview" />
               </picture>
               <div>
@@ -905,6 +965,44 @@
                 </div>
                 <p class="desc">
                   We synthesize foundations, capability levels, governing laws, evaluation principles, and open problems for agentic world modeling.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="publication-group">
+            <div class="group-title">
+              <h3>3D Editing and Modeling</h3>
+            </div>
+
+            <article class="publication featured">
+              <picture>
+                <img class="paper-preview" src="media/edithero.jpg" width="210" height="164" alt="EditHero examples of part-level 3D editing across multiple turns" loading="lazy" />
+              </picture>
+              <div>
+                <p class="title">EditHero: A Benchmark for Long-Horizon Part-Level 3D Editing and Vibe Modeling</p>
+                <div class="authors">
+                  <a href="https://auroraryan0301.github.io/" target="_blank">Ruihan Yu*</a>,
+                  <a href="https://liagm.github.io/" target="_blank">Yu-Ju Tsai*</a>,
+                  <a href="https://myniuuu.github.io/" target="_blank">Muyao Niu</a>,
+                  <b>Runyi Li</b>,
+                  <a href="https://scholar.google.com/citations?user=CbWYuIEAAAAJ" target="_blank">Lian Fu</a>,
+                  <a href="https://openreview.net/profile?id=%7ELiu_Hanqing3" target="_blank">Hanqing Liu</a>,
+                  <a href="https://brian90709.github.io/" target="_blank">Zheng-Hui Huang</a>,
+                  <a href="https://scholar.google.com/citations?user=lwuwuAYAAAAJ&amp;hl=zh-CN" target="_blank">Yonghao Yu</a>,
+                  <a href="https://shokuno5.github.io/" target="_blank">Sho Kuno</a>,
+                  <a href="https://faculty.ucmerced.edu/mhyang/" target="_blank">Ming-Hsuan Yang</a>,
+                  <a href="https://kpzhang93.github.io/" target="_blank">Kaipeng Zhang</a>,
+                  <a href="https://lightchaserx.github.io/" target="_blank">Zhixiang Wang</a>
+                </div>
+                <p class="venue">Preprint 2026</p>
+                <div class="links">
+                  <span class="link"><a href="https://alaya-lab.github.io/EditHero/assets/paper/EditHero.pdf" target="_blank">Paper</a></span>
+                  <span class="link"><a href="https://alaya-lab.github.io/EditHero/" target="_blank">Project</a></span>
+                  <span class="link"><a href="https://github.com/AlayaLab/EditHero" target="_blank">Code</a></span>
+                </div>
+                <p class="desc">
+                  We introduce a benchmark for long-horizon, part-level 3D editing with exact targets after every turn, comparing conventional editing methods with code-generating LLMs.
                 </p>
               </div>
             </article>
@@ -953,7 +1051,7 @@
                   <a href="https://villa.jianzhang.tech/people/xu-jiang-%E8%92%8B%E6%97%AD/" target="_blank">Xu Jiang</a>,
                   <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a>
                 </div>
-                <p class="venue">IEEE JCSVT submission</p>
+                <p class="venue">arXiv 2024</p>
                 <div class="links">
                   <span class="link"><a href="https://arxiv.org/abs/2412.09646" target="_blank">Paper</a></span>
                 </div>
@@ -1023,7 +1121,7 @@
                   <a href="https://villa.jianzhang.tech/people/zhipei-xu-%E5%BE%90%E5%BF%97%E6%B2%9B/" target="_blank">Zhipei Xu</a>,
                   <a href="https://villa.jianzhang.tech/people/xuanyu-zhang-%E5%BC%A0%E8%BD%A9%E5%AE%87/" target="_blank">Xuanyu Zhang</a>,
                   <b>Runyi Li</b>,
-                  <a href="https://villa.jianzhang.tech/people/chuhan-tong-%E4%BD%9F%E6%A5%9A%E6%B6%B5/" target="_blank">Zecheng Tang</a>,
+                  Zecheng Tang,
                   Qing Huang,
                   <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a>
                 </div>
@@ -1154,9 +1252,10 @@
                   <a href="https://villa.jianzhang.tech/people/zhipei-xu-%E5%BE%90%E5%BF%97%E6%B2%9B/" target="_blank">Zhipei Xu</a>,
                   <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a>
                 </div>
-                <p class="venue">Machine Intelligence Research</p>
+                <p class="venue">Machine Intelligence Research, 2026</p>
                 <div class="links">
-                  <span class="link"><a href="https://arxiv.org/abs/2503.00531" target="_blank">Paper</a></span>
+                  <span class="link"><a href="https://doi.org/10.1007/s11633-025-1588-7" target="_blank">Paper</a></span>
+                  <span class="link"><a href="https://arxiv.org/abs/2503.00531" target="_blank">arXiv</a></span>
                 </div>
                 <p class="desc">
                   We propose an adaptive watermarking framework for 3D Gaussian generation models.
@@ -1177,12 +1276,44 @@
                   Yongbing Zhang,
                   <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a>
                 </div>
-                <p class="venue">IEEE TIFS submission</p>
+                <p class="venue">arXiv 2024</p>
                 <div class="links">
                   <span class="link"><a href="https://arxiv.org/pdf/2405.16596" target="_blank">Paper</a></span>
                 </div>
                 <p class="desc">
                   We propose an IP protection framework against personalized generation, jointly supporting source tracing and scalable attribution.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="publication-group">
+            <div class="group-title">
+              <h3>AI for Science</h3>
+            </div>
+
+            <article class="publication featured">
+              <picture>
+                <img class="paper-preview" src="media/perovskites.jpg" width="210" height="164" alt="Machine learning for energy band prediction of halide perovskites paper preview" loading="lazy" />
+              </picture>
+              <div>
+                <p class="title">Machine Learning for Energy Band Prediction of Halide Perovskites</p>
+                <div class="authors">
+                  Yucheng Ye*,
+                  <b>Runyi Li*</b>,
+                  Bo Qu,
+                  Hantao Wang,
+                  Yueli Liu,
+                  Zhijian Chen,
+                  <a href="https://jianzhang.tech/" target="_blank">Jian Zhang</a>,
+                  Lixin Xiao
+                </div>
+                <p class="venue">Materials Futures, 2025</p>
+                <div class="links">
+                  <span class="link"><a href="https://doi.org/10.1088/2752-5724/adeead" target="_blank">Paper</a></span>
+                </div>
+                <p class="desc">
+                  We predict bandgaps and band-edge energy levels of halide perovskites with machine learning, using feature attribution to identify the material properties that shape their electronic structure.
                 </p>
               </div>
             </article>
@@ -1214,6 +1345,25 @@
 
             <article class="publication">
               <picture>
+                <img class="paper-preview" src="media/ehealth-protocol.jpg" width="210" height="164" alt="PLOS ONE eHealth self-management systematic review protocol paper preview" loading="lazy" />
+              </picture>
+              <div>
+                <p class="title">The Effectiveness of eHealth Self-management Interventions in Patients with Chronic Heart Failure: Protocol for a Systematic Review and Meta-analysis</p>
+                <div class="authors">
+                  Siru Liu, Jili Li, Zhan Qu, <b>Runyi Li</b>, Jialin Liu
+                </div>
+                <p class="venue">PLOS ONE, 2022</p>
+                <div class="links">
+                  <span class="link"><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0268446" target="_blank">Paper</a></span>
+                </div>
+                <p class="desc">
+                  We define a systematic review and meta-analysis protocol to evaluate eHealth self-management interventions for chronic heart failure, covering study selection, bias assessment, and evidence synthesis.
+                </p>
+              </div>
+            </article>
+
+            <article class="publication">
+              <picture>
                 <img src="media/cbam.png" width="210" height="164" alt="CBAM paper teaser" />
               </picture>
               <div>
@@ -1221,7 +1371,7 @@
                 <div class="authors">
                   <b>Runyi Li</b>, Sen Wang, Zizhou Wang, Lei Zhang
                 </div>
-                <p class="venue">Journal of Physics, 2021</p>
+                <p class="venue">Journal of Physics: Conference Series, 2021</p>
                 <div class="links">
                   <span class="link"><a href="https://iopscience.iop.org/article/10.1088/1742-6596/2082/1/012006/pdf" target="_blank">Paper</a></span>
                 </div>
@@ -1290,7 +1440,7 @@
       <footer class="footer">
         Template adapted from
         <a href="https://akaneqwq.github.io/" target="_blank">Qian Wang</a><br />
-        Last updated: June 2026
+        Last updated: October 2026
       </footer>
     </div>
   </body>
